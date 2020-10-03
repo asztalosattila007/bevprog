@@ -20,7 +20,7 @@ string my_name;
 cin >> my_name;	
   
   
-  cout << "Dear " << first_name << "!\n";
+  cout << "\nDear " << first_name << "!\n";
   cout << "How are you? I miss you. I hope everything is okay with you.\n"; // barát neve//
   cout << "Have you seen " << friend_name << " lately?\n";
     if (friend_sex == 'm')
@@ -29,11 +29,11 @@ cin >> my_name;
 		cout << "If you see " << friend_name << " please ask her to call me.\n";
 
 
-	if (age > 12) cout << "Next year you will be " << age+1 << ".\n";
-	if (age == 17) cout << "Next year you will be able to vote.\n";
-	if (age >70) cout << "I hope you are enjoying retirement.\n";
+	if (age < 12) cout << "Next year you will be " << age+1 << ".\n";
+	else if (age == 17) cout << "Next year you will be able to vote.\n";
+	else if (age > 70) cout << "I hope you are enjoying retirement.\n";
 
-cout <<"Yours Sincerely, \n\n\n";		
+cout <<"Yours Sincerely, \n\n";		
 cout << my_name << endl;
 return 0;
 }
