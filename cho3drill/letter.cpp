@@ -27,7 +27,7 @@ char friend_sex = 0;
 cout << "Enter the age of the recipient.\n"; //a címzett életkora//
  cin >> age;
 	if (age < 0 || age > 110) simple_error("you're kidding!");
-	if (age > 12) cout << "Next year you will be " << age+1 << ".\n";
+	if (age < 12) cout << "Next year you will be " << age+1 << ".\n";
 	if (age == 17) cout << "Next year you will be able to vote.\n";
 	if (age >70) cout << "I hope you are enjoying retirement.\n";
 cout << "Enter your name!\n";
