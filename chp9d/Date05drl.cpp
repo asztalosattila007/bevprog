@@ -91,13 +91,14 @@ namespace UDChrono {
 	}
 
 } // End UDChrono
-	
-/*	ostream& operator<<(ostream& ks, const Date& d)
+
+ostream& operator<<(ostream& os, UDChrono::Date& d)
 {
-    return ks << '(' << d.get_year()
-              << '.' << d.get_month()
-              << '.' << d.get_day() << ')';
-}*/
+	return os << '(' << d.get_year()
+	<< '.' << d.get_month()
+	<< '.' << d.get_day() << ')';
+}
+
 
 int main()
 try {
@@ -105,37 +106,15 @@ try {
 	using namespace UDChrono;
 
 
-		Date today {Year{1978},Month::jun,25};
+	Date today {Year{1978},Month::june,25};
 	cout << "Today: " << today << '\n';
-	UDchrono::Date tomorrow {Year{1978},Month::jun,25};
+	Date tomorrow {Year{1978},Month::june,25};
 	tomorrow.add_day(1);
-	 cout << "Tomorrow: " << tomorrow << '\n';
-	 UDchrono::Date test {Year{2004},Month::jan,-5};
-	 cout << "Test: " << test << '\n';
+	cout << "Tomorrow: " << tomorrow << '\n';
+	Date test {Year{2004},Month::jan,-5};
+	cout << "Test: " << test << '\n';
 
-	// Date today {Year{2020}, Month::aug, 31};
-
-	// cout << "Date: " << today.get_year() << ". " << today.get_month() << " " << today.get_day() << ".\n";
-
-	// today.add_day(1);
-
-	// cout << "Date: " << today.get_year() << ". " << today.get_month() << " " << today.get_day() << ".\n";
-
-	// Date my_birthday {Year{2020},Month::dec,31};
-
-	// cout << "Date: " << my_birthday.get_year() << ". " << my_birthday.get_month() << " " << my_birthday.get_day() << ".\n";
-
-	// my_birthday.add_day(1);
-
-	// cout << "Date: " << my_birthday.get_year() << ". " << my_birthday.get_month() << " " << my_birthday.get_day() << ".\n";
-
-	// Date other_date {my_birthday};
-
-	// cout << "Date: " << other_date.get_year() << ". " << other_date.get_month() << " " << other_date.get_day() << ".\n";
-
-	// Date def_date;
-
-	// cout << "Date: " << def_date.get_year() << ". " << def_date.get_month() << " " << def_date.get_day() << ".\n";
+	
 
 	vector<Date> dates(10);
 
