@@ -8,6 +8,6 @@ int main(){
 	foo = 7;
 	print_foo();
 	print(99);
- cin>>cc;
+ std::cin>>cc;
 	return 0;
 }
